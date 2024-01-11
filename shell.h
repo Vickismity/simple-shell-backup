@@ -11,6 +11,10 @@
 #include <errno.h>
 #include <fcntl.h>
 
+char *get_path(char *command);
+extern char **environ;
 
+void builtin_cd(char *args);
+void builtin_exit(void);
 
 #endif
